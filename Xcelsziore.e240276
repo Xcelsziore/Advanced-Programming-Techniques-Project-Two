@@ -1,0 +1,79 @@
+*** glibc detected *** ./threadDFT2d: free(): invalid next size (normal): 0x0000000001c20590 ***
+======= Backtrace: =========
+/lib64/libc.so.6[0x3833675e76]
+/lib64/libc.so.6[0x38336789b3]
+/usr/lib64/libstdc++.so.6(_ZNSt13basic_filebufIcSt11char_traitsIcEE26_M_destroy_internal_bufferEv+0x1e)[0x3836a6b8ae]
+/usr/lib64/libstdc++.so.6(_ZNSt13basic_filebufIcSt11char_traitsIcEE5closeEv+0x64)[0x3836a6cb24]
+/usr/lib64/libstdc++.so.6(_ZNSt14basic_ofstreamIcSt11char_traitsIcEED1Ev+0x56)[0x3836a72e56]
+./threadDFT2d[0x403174]
+./threadDFT2d[0x402125]
+./threadDFT2d[0x401601]
+/lib64/libc.so.6(__libc_start_main+0xfd)[0x383361ed5d]
+./threadDFT2d[0x401429]
+======= Memory map: ========
+00400000-00404000 r-xp 00000000 00:15 468975689                          /nethome/anair36/ThreadsTransform2D/threadDFT2d
+00604000-00605000 rw-p 00004000 00:15 468975689                          /nethome/anair36/ThreadsTransform2D/threadDFT2d
+01c1d000-01c3e000 rw-p 00000000 00:00 0                                  [heap]
+3833200000-3833220000 r-xp 00000000 fd:00 527433                         /lib64/ld-2.12.so
+383341f000-3833420000 r--p 0001f000 fd:00 527433                         /lib64/ld-2.12.so
+3833420000-3833421000 rw-p 00020000 fd:00 527433                         /lib64/ld-2.12.so
+3833421000-3833422000 rw-p 00000000 00:00 0 
+3833600000-383378a000 r-xp 00000000 fd:00 527434                         /lib64/libc-2.12.so
+383378a000-383398a000 ---p 0018a000 fd:00 527434                         /lib64/libc-2.12.so
+383398a000-383398e000 r--p 0018a000 fd:00 527434                         /lib64/libc-2.12.so
+383398e000-383398f000 rw-p 0018e000 fd:00 527434                         /lib64/libc-2.12.so
+383398f000-3833994000 rw-p 00000000 00:00 0 
+3833e00000-3833e17000 r-xp 00000000 fd:00 533565                         /lib64/libpthread-2.12.so
+3833e17000-3834017000 ---p 00017000 fd:00 533565                         /lib64/libpthread-2.12.so
+3834017000-3834018000 r--p 00017000 fd:00 533565                         /lib64/libpthread-2.12.so
+3834018000-3834019000 rw-p 00018000 fd:00 533565                         /lib64/libpthread-2.12.so
+3834019000-383401d000 rw-p 00000000 00:00 0 
+3834a00000-3834a83000 r-xp 00000000 fd:00 522418                         /lib64/libm-2.12.so
+3834a83000-3834c82000 ---p 00083000 fd:00 522418                         /lib64/libm-2.12.so
+3834c82000-3834c83000 r--p 00082000 fd:00 522418                         /lib64/libm-2.12.so
+3834c83000-3834c84000 rw-p 00083000 fd:00 522418                         /lib64/libm-2.12.so
+3835600000-3835616000 r-xp 00000000 fd:00 523384                         /lib64/libgcc_s-4.4.7-20120601.so.1
+3835616000-3835815000 ---p 00016000 fd:00 523384                         /lib64/libgcc_s-4.4.7-20120601.so.1
+3835815000-3835816000 rw-p 00015000 fd:00 523384                         /lib64/libgcc_s-4.4.7-20120601.so.1
+3836a00000-3836ae8000 r-xp 00000000 fd:00 394071                         /usr/lib64/libstdc++.so.6.0.13
+3836ae8000-3836ce8000 ---p 000e8000 fd:00 394071                         /usr/lib64/libstdc++.so.6.0.13
+3836ce8000-3836cef000 r--p 000e8000 fd:00 394071                         /usr/lib64/libstdc++.so.6.0.13
+3836cef000-3836cf1000 rw-p 000ef000 fd:00 394071                         /usr/lib64/libstdc++.so.6.0.13
+3836cf1000-3836d06000 rw-p 00000000 00:00 0 
+7f2ac90b5000-7f2ac90b6000 rw-p 00000000 00:00 0 
+7f2ac90b6000-7f2ac90b7000 ---p 00000000 00:00 0 
+7f2ac90b7000-7f2ac9ab7000 rw-p 00000000 00:00 0 
+7f2ac9ab7000-7f2ac9ab8000 ---p 00000000 00:00 0 
+7f2ac9ab8000-7f2aca4b8000 rw-p 00000000 00:00 0 
+7f2aca4b8000-7f2aca4b9000 ---p 00000000 00:00 0 
+7f2aca4b9000-7f2acaeb9000 rw-p 00000000 00:00 0 
+7f2acaeb9000-7f2acaeba000 ---p 00000000 00:00 0 
+7f2acaeba000-7f2acb8ba000 rw-p 00000000 00:00 0 
+7f2acb8ba000-7f2acb8bb000 ---p 00000000 00:00 0 
+7f2acb8bb000-7f2acc2bb000 rw-p 00000000 00:00 0 
+7f2acc2bb000-7f2acc2bc000 ---p 00000000 00:00 0 
+7f2acc2bc000-7f2acccbc000 rw-p 00000000 00:00 0 
+7f2acccbc000-7f2acccbd000 ---p 00000000 00:00 0 
+7f2acccbd000-7f2acd6bd000 rw-p 00000000 00:00 0 
+7f2acd6bd000-7f2acd6be000 ---p 00000000 00:00 0 
+7f2acd6be000-7f2ace0be000 rw-p 00000000 00:00 0 
+7f2ace0be000-7f2ace0bf000 ---p 00000000 00:00 0 
+7f2ace0bf000-7f2aceabf000 rw-p 00000000 00:00 0 
+7f2aceabf000-7f2aceac0000 ---p 00000000 00:00 0 
+7f2aceac0000-7f2acf4c0000 rw-p 00000000 00:00 0 
+7f2acf4c0000-7f2acf4c1000 ---p 00000000 00:00 0 
+7f2acf4c1000-7f2acfec1000 rw-p 00000000 00:00 0 
+7f2acfec1000-7f2acfec2000 ---p 00000000 00:00 0 
+7f2acfec2000-7f2ad08c2000 rw-p 00000000 00:00 0 
+7f2ad08c2000-7f2ad08c3000 ---p 00000000 00:00 0 
+7f2ad08c3000-7f2ad12c3000 rw-p 00000000 00:00 0 
+7f2ad12c3000-7f2ad12c4000 ---p 00000000 00:00 0 
+7f2ad12c4000-7f2ad1cc4000 rw-p 00000000 00:00 0 
+7f2ad1cc4000-7f2ad1cc5000 ---p 00000000 00:00 0 
+7f2ad1cc5000-7f2ad26c5000 rw-p 00000000 00:00 0 
+7f2ad26c5000-7f2ad26c6000 ---p 00000000 00:00 0 
+7f2ad26c6000-7f2ad40cc000 rw-p 00000000 00:00 0 
+7f2ad40d7000-7f2ad40d9000 rw-p 00000000 00:00 0 
+7fffc10c5000-7fffc10da000 rw-p 00000000 00:00 0                          [stack]
+7fffc11ff000-7fffc1200000 r-xp 00000000 00:00 0                          [vdso]
+ffffffffff600000-ffffffffff601000 r-xp 00000000 00:00 0                  [vsyscall]
